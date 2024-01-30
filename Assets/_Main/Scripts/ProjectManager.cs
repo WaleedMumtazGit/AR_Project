@@ -12,19 +12,29 @@ public class ProjectManager : MonoBehaviour
         instance = this;
     }
 
-    IEnumerator Start()
+    void Start()
     {
-        MyAdsManager.instance.InitializeAds();
-       
-
-
-        yield return new WaitForSeconds(10f);
-        MyAdsManager.instance.ShowInterstitialAds();
-        MyAdsManager.instance.ShowAdmobBanner();
+        ShowAd();
     }
 
     void Update()
     {
        
     }
+
+    public void ShowAd()
+    {
+        loadBanner.instance.showBannerAd();
+    }
+
+    public void ShowInterstitial()
+    {
+        loadInterstitial.instance.ShowAd();
+    }
+
+    public void ShowRewarded()
+    {
+        loadRewarded.instance.ShowAd();
+    }
+
 }
