@@ -1547,19 +1547,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adType: 0
   adPriority: 0
-  bannerPosition: 0
-  TestAppId: 
-  appID: 
+  bannerPosition: 1
+  TestAppId: ca-app-pub-3940256099942544~3347511713
+  appID: ca-app-pub-8955468275342885~3808101349
   admobRewardedId: 
-  admobBannerId: 
-  admobBannerId_Two_Gb: 
-  admobInterstitalId: 
-  admobInterstitalId_Two_Gb: 
-  canShowAds: 0
+  admobBannerId: ca-app-pub-8955468275342885/7507409872
+  admobBannerId_Two_Gb: ca-app-pub-8955468275342885/7507409872
+  admobInterstitalId: ca-app-pub-8955468275342885/9537325771
+  admobInterstitalId_Two_Gb: ca-app-pub-8955468275342885/9537325771
+  canShowAds: 1
   adBoolValue: 0
-  admobOpenAppAdsId: 
+  admobOpenAppAdsId: ca-app-pub-8955468275342885/4369593722
   appOpenOrientation: 1
-  unityId: 
+  unityId: 5376150
   unityInterstitalId: Interstitial_Android
   unityRewardedId: Rewarded_Android
 --- !u!1 &425410336
