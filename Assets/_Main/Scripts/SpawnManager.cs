@@ -1,18 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
 public class SpawnManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static SpawnManager instance;
+
+    public Transform pos;
+    public GameObject prefab;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            SpawnObject(pos, prefab);
+        }
+    }
+
+    public void SpawnObject(Transform pos, GameObject prefab)
+    {
+        GameObject obj = Instantiate(prefab, pos.position, Quaternion.identity);
     }
 }
