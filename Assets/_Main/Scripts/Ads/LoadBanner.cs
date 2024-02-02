@@ -12,7 +12,6 @@ public class loadBanner : MonoBehaviour
     string adUnitId;
 
     BannerPosition bannerPosition = BannerPosition.BOTTOM_CENTER;
-    BannerView admobBannerView;
 
     private void Start()
     {
@@ -33,8 +32,6 @@ public class loadBanner : MonoBehaviour
 
     public void LoadBanner()
     {
-        this.admobBannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.Bottom);
-
         BannerLoadOptions options = new BannerLoadOptions
         {
             loadCallback = OnBannerLoaded,

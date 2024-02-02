@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 using UnityEngine.XR.Interaction.Toolkit.Inputs;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -23,10 +23,7 @@ public class SpawnManager : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-            SpawnObject(pos, prefab);
-        }
+
     }
 
     public void SpawnObject(Transform pos, GameObject prefab)

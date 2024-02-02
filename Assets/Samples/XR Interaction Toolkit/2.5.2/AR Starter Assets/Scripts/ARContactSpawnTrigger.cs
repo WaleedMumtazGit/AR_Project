@@ -85,6 +85,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets
 
             surfaceNormal = arPlane.normal;
             surfacePosition = arPlane.center;
+
             return true;
         }
     }

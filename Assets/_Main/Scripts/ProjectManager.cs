@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using TriLibCore.Samples;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using TMPro;
 
 public class ProjectManager : MonoBehaviour
 {
     public static ProjectManager instance;
+
+    public TMP_InputField inputField;
 
     private void Awake()
     {
@@ -35,6 +40,11 @@ public class ProjectManager : MonoBehaviour
     public void ShowRewarded()
     {
         loadRewarded.instance.ShowAd();
+    }
+
+    public void LoadModel()
+    {
+        LoadModelFromURLSample.instance.LoadDownloadedModel();
     }
 
 }
